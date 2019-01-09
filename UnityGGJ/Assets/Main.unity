@@ -423,13 +423,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1065377403}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.33008644, y: -0.44312125, z: 0.17971906, w: 0.813872}
+  m_LocalPosition: {x: 5.56, y: 4.67, z: -5.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 44.152, y: -57.133003, z: 0}
 --- !u!1 &1746920110
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 1746920111}
   - component: {fileID: 1746920115}
   - component: {fileID: 1746920116}
+  - component: {fileID: 1746920117}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
@@ -545,14 +546,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1746920110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98fc9f4eb2852401ea9756d283b04a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   VelocidadRotacion: 3
   VelocidadMovimiento: 1
-  horizontal: 0
+--- !u!114 &1746920117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746920110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ca700d3a76f4f3bad8e9f8190c52bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelocidadMovimiento: 1
 --- !u!1001 &1932856209
 Prefab:
   m_ObjectHideFlags: 0
