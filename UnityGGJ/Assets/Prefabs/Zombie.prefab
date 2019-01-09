@@ -1266,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 747e47df0610d4ed0b89a2eb7998e64e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EdicionManual: 0
   Velocidad: 1
 --- !u!135 &135217535432020732
 SphereCollider:
