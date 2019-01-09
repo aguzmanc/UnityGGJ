@@ -441,8 +441,10 @@ GameObject:
   - component: {fileID: 1746920113}
   - component: {fileID: 1746920112}
   - component: {fileID: 1746920111}
+  - component: {fileID: 1746920115}
+  - component: {fileID: 1746920116}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Jugador
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +518,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1746920115
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746920110}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1746920116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746920110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fc9f4eb2852401ea9756d283b04a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelocidadRotacion: 3
+  VelocidadMovimiento: 1
+  horizontal: 0
 --- !u!1001 &1932856209
 Prefab:
   m_ObjectHideFlags: 0

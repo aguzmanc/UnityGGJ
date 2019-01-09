@@ -15,6 +15,7 @@ public class Zombie : MonoBehaviour
 	public bool EdicionManual = false;
 
 	// todo lo publico se ve en el inspector para editarse
+	[Range(0f, 5f)] // esto lo convierte en un slider
 	public float Velocidad = 3f; // unidades por segundo
 
 	
