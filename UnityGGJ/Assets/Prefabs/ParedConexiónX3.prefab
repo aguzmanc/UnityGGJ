@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4265513595060546}
   m_Layer: 0
-  m_Name: "ParedConexio\u0301nX3"
+  m_Name: "ParedConexi\xF3nX3"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
