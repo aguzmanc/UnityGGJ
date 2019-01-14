@@ -18,4 +18,10 @@ public class Door : MonoBehaviour {
 			animator.SetTrigger("Abrir");
 		}
 	}
+
+	void OnTriggerExit( Collider other) {
+		if(other.gameObject.tag == "Player") {
+			animator.SetTrigger("Cerrar");
+		}
+	}
 }
