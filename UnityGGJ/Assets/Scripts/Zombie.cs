@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour 
 {
-	static float DISTANCIA_ATAQUE = 0.8f;
+	static float DISTANCIA_ATAQUE = 1.2f;
 
 	NavMeshAgent agente;
 	Animator animador;

@@ -11,6 +11,13 @@ public class ControlSimple : MonoBehaviour
 	public float VelocidadMovimiento = 1f;
 
 
+	Animator animador;
+
+	void Awake() {
+		animador = GetComponentInChildren<Animator>();
+	}
+
+
 	void Update () {
 		// obtiene información del teclado (input)
 		float horizontal = Input.GetAxis("Horizontal");
@@ -22,5 +29,11 @@ public class ControlSimple : MonoBehaviour
 		// mueve hacia adelante
 		transform.Translate(0f, 0f, VelocidadMovimiento * vertical * Time.deltaTime, 
 			Space.Self);
+
+
+		// anima según la velocidad
+		if(animador!=null) {
+			animador.SetFloat("Velocidad", vertical);
+		}
 	}
 }

@@ -6,9 +6,11 @@ using UnityEngine.AI;
 public class ControlPorMouse : MonoBehaviour 
 {
 	NavMeshAgent agente;
+	Animator animador;
 
 	void Awake() {
 		agente = GetComponent<NavMeshAgent>();
+		animador = GetComponentInChildren<Animator>();
 	}
 	
 
@@ -17,6 +19,13 @@ public class ControlPorMouse : MonoBehaviour
 		Camera cam = Camera.main;
 		if(cam==null) return;
 
+		// anima según la velocidad
+		if(animador!=null) {
+			animador.SetFloat("Velocidad", 
+				agente.velocity.magnitude
+				//agente.isStopped ? 0 : 1
+			);
+		}
 
 		if(Input.GetMouseButtonDown(0)) {
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
