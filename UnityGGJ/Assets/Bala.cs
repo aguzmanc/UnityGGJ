@@ -9,5 +9,7 @@ public class Bala : MonoBehaviour {
 
 	void Update () {
 		transform.Translate(velocidad * Time.deltaTime, 0, 0);
+ 
 	}
+
 }
