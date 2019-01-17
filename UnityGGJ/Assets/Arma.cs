@@ -11,7 +11,6 @@ public class Arma : MonoBehaviour {
 	void Update () {
 		if  (Input.GetKeyDown("space"))
         {
-			Debug.Log("disparar");
             GameObject x = Instantiate(bala, origenBala.position, origenBala.rotation);
 			Destroy(x, 3);
         }
