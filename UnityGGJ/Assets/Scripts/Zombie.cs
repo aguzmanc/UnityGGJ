@@ -53,7 +53,7 @@ public class Zombie : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter(Collider otro) {
+	void OnTriggerStay(Collider otro) {
 		if(otro.tag=="Player") {
 			jugador = otro.transform;
 		}
